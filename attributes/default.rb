@@ -5,10 +5,6 @@
 # By default, always installs the latest by specifying nil
 default['influxdb']['version'] = nil
 
-# Grab clients -- right now only supports Ruby and CLI
-default['influxdb']['client']['cli']['enable'] = false
-default['influxdb']['client']['ruby']['enable'] = false
-default['influxdb']['client']['ruby']['version'] = nil
 default['influxdb']['handler']['version'] = '0.1.4'
 
 # For influxdb versions >= 0.9.x

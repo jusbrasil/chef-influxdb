@@ -102,16 +102,6 @@ influxdb_retention_policy "foodb default retention policy" do
 end
 ```
 
-## Client Libraries
-Right now, this cookbook only supports the Ruby and CLI client libraries so as
-not to add too many dependencies. That might change in the near future. By
-default both flavors are disabled. Enable e.g. Ruby via:
-
-`node.default['influxdb']['client']['ruby']['enable'] = true`
-
-Finally include the `influxdb::client` in your node's `run_list` to install the
-clients.
-
 ## Tests
 
 To run tests, install all dependencies with [bundler](http://bundler.io/):
